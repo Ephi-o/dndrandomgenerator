@@ -1,0 +1,104 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #121212;
+}
+.sheet
+{
+    margin: 5vh 55vw;
+    background-color: #F8F8FF;
+    border: 1rem double #8B1A1A;
+    width: 40vw;
+    height: 90vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    font-size: 1.5rem;
+    column-gap: 20px;
+    padding-left: 15px;
+}
+.randomsheet
+{
+    position: absolute;
+    margin: 11vh 5vw;
+    background-color: #F8F8FF;
+    border: 1rem double #8B1A1A;
+    width: 40vw;
+    height: 30vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.title
+{
+    display: block;
+    position: absolute;
+    margin: 5vh 15vw;
+    background-color: #F8F8FF;
+    border: 1rem double #8B1A1A;
+    z-index: 1;
+}
+#pseudo
+{
+    display: block;
+    position: relative;
+    left: calc(10vw - 15px);
+    min-width: 100px;
+    border: 5px double #121212;
+    text-align: center;
+    background-color: rgba(245, 222, 179, 0);
+    font-size: 1rem;
+}
+
+.race
+{
+    grid-row : 2;
+    grid-column : 1;
+}
+.sousrace
+{
+    grid-row : 3;
+    grid-column : 1;
+}
+.classe
+{
+    grid-row : 4;
+    grid-column : 1;
+}
+.métier
+{
+    grid-row : 5;
+    grid-column : 1;
+}
+.background
+{
+    grid-row : 6;
+    grid-column : span 1/2;
+}
+.descrace
+{
+    grid-row : 2;
+    grid-column : 2;
+}
+.descsousrace
+{
+    grid-row : 3;
+    grid-column : 2;
+}
+.descclass
+{
+    grid-row : 4;
+    grid-column : 2;
+}
+.descmétier
+{
+    grid-row : 5;
+    grid-column : 2;
+}
